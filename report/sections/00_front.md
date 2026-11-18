@@ -1,7 +1,14 @@
 # PathSnap: Distributed Map-Matching & Route Reconstruction
 
 **UE24CS352A Machine Learning, PES University (RR Campus)**
-**Team:** Dhyan, Dhruva, Dilipan, Dhyeya
+
+| Team member | SRN |
+|---|---|
+| Dhruva | PES1UG24AM089 |
+| Dhyan | PES1UG24AM090 |
+| Dhyeya | PES1UG24AM091 |
+| Dilipan | PES1UG24AM092 |
+
 **Repository:** https://github.com/Dhyan-rao-10/PathSnap-ML-Hackathon
 
 All numbers in this report come from scripts in the repository. Each section names the script and the `results/` folder it comes from, so it can be reproduced.
