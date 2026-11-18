@@ -1,0 +1,67 @@
+train rows 1,399,088 (186,074 fixes), test rows 149,840, positive rate 0.132
+
+=== logreg ===
+  fold 0: macroF1=0.8940 logloss=0.1224 top1=0.8540 fit=1.5s
+  fold 1: macroF1=0.9044 logloss=0.1097 top1=0.8815 fit=1.5s
+  fold 2: macroF1=0.9114 logloss=0.0971 top1=0.8638 fit=1.6s
+  fold 3: macroF1=0.9339 logloss=0.1016 top1=0.9239 fit=1.5s
+  fold 4: macroF1=0.9150 logloss=0.1082 top1=0.8922 fit=1.4s
+{'model': 'logreg', 'family': 'Linear', 'config': 'StandardScaler + L2 LogisticRegression C=1.0, lbfgs', 'train_rows_used': 601137, 'cv_macro_f1_mean': np.float64(0.9117), 'cv_macro_f1_std': np.float64(0.0132), 'cv_log_loss_mean': np.float64(0.1078), 'cv_top1_mean': np.float64(0.8831), 'cv_top1_std': np.float64(0.0244), 'train_macro_f1': 0.9146, 'train_log_loss': 0.1044, 'test_macro_f1': 0.9125, 'test_precision_pos': 0.8477, 'test_recall_pos': 0.8468, 'test_f1_pos': 0.8473, 'test_accuracy': 0.9611, 'test_log_loss': 0.1001, 'test_top1_acc': 0.8792, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.924, 'test_route_f1': 0.9299, 'fit_time_s_full': 1.2867, 'inference_ms_per_1000_fixes': 1.0944}
+
+=== gnb ===
+  fold 0: macroF1=0.8386 logloss=0.5610 top1=0.8363 fit=0.2s
+  fold 1: macroF1=0.8494 logloss=0.5084 top1=0.8589 fit=0.2s
+  fold 2: macroF1=0.8428 logloss=0.5216 top1=0.8428 fit=0.2s
+  fold 3: macroF1=0.8506 logloss=0.8469 top1=0.8710 fit=0.2s
+  fold 4: macroF1=0.8436 logloss=0.5371 top1=0.8684 fit=0.2s
+{'model': 'gnb', 'family': 'Probabilistic', 'config': 'GaussianNB var_smoothing=1e-9', 'train_rows_used': 601137, 'cv_macro_f1_mean': np.float64(0.845), 'cv_macro_f1_std': np.float64(0.0044), 'cv_log_loss_mean': np.float64(0.595), 'cv_top1_mean': np.float64(0.8555), 'cv_top1_std': np.float64(0.0138), 'train_macro_f1': 0.8483, 'train_log_loss': 0.5597, 'test_macro_f1': 0.8402, 'test_precision_pos': 0.6118, 'test_recall_pos': 0.9077, 'test_f1_pos': 0.731, 'test_accuracy': 0.9148, 'test_log_loss': 0.6036, 'test_top1_acc': 0.8487, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.9206, 'test_route_f1': 0.9053, 'fit_time_s_full': 0.2057, 'inference_ms_per_1000_fixes': 3.3242}
+
+=== knn ===
+  fold 0: macroF1=0.9136 logloss=0.1312 top1=0.8524 fit=0.1s
+  fold 1: macroF1=0.9162 logloss=0.1120 top1=0.8764 fit=0.1s
+  fold 2: macroF1=0.9191 logloss=0.1001 top1=0.8488 fit=0.1s
+  fold 3: macroF1=0.9382 logloss=0.1297 top1=0.9123 fit=0.1s
+  fold 4: macroF1=0.9219 logloss=0.1141 top1=0.8828 fit=0.1s
+{'model': 'knn', 'family': 'Instance-based', 'config': 'StandardScaler + KNN k=50, distance-weighted, euclidean', 'train_rows_used': 150770, 'cv_macro_f1_mean': np.float64(0.9218), 'cv_macro_f1_std': np.float64(0.0086), 'cv_log_loss_mean': np.float64(0.1174), 'cv_top1_mean': np.float64(0.8745), 'cv_top1_std': np.float64(0.023), 'train_macro_f1': 0.9403, 'train_log_loss': 0.0801, 'test_macro_f1': 0.9241, 'test_precision_pos': 0.8947, 'test_recall_pos': 0.841, 'test_f1_pos': 0.867, 'test_accuracy': 0.9671, 'test_log_loss': 0.1041, 'test_top1_acc': 0.8848, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.9279, 'test_route_f1': 0.9356, 'fit_time_s_full': 0.0713, 'inference_ms_per_1000_fixes': 1201.5547}
+
+=== linsvm ===
+  fold 0: macroF1=0.8943 logloss=0.1212 top1=0.8543 fit=4.8s
+  fold 1: macroF1=0.9037 logloss=0.1097 top1=0.8821 fit=5.2s
+  fold 2: macroF1=0.9107 logloss=0.0987 top1=0.8638 fit=5.2s
+  fold 3: macroF1=0.9350 logloss=0.1001 top1=0.9242 fit=5.0s
+  fold 4: macroF1=0.9141 logloss=0.1083 top1=0.8926 fit=5.0s
+{'model': 'linsvm', 'family': 'Kernel (linear SVM)', 'config': 'StandardScaler + LinearSVC C=1.0, sigmoid-calibrated (3-fold)', 'train_rows_used': 300856, 'cv_macro_f1_mean': np.float64(0.9116), 'cv_macro_f1_std': np.float64(0.0135), 'cv_log_loss_mean': np.float64(0.1076), 'cv_top1_mean': np.float64(0.8834), 'cv_top1_std': np.float64(0.0244), 'train_macro_f1': 0.9138, 'train_log_loss': 0.1048, 'test_macro_f1': 0.9118, 'test_precision_pos': 0.8504, 'test_recall_pos': 0.8417, 'test_f1_pos': 0.8461, 'test_accuracy': 0.9609, 'test_log_loss': 0.1007, 'test_top1_acc': 0.8793, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.9235, 'test_route_f1': 0.9313, 'fit_time_s_full': 5.2166, 'inference_ms_per_1000_fixes': 2.5765}
+
+=== rf ===
+  fold 0: macroF1=0.9283 logloss=0.0793 top1=0.8705 fit=59.9s
+  fold 1: macroF1=0.9369 logloss=0.0678 top1=0.9039 fit=59.9s
+  fold 2: macroF1=0.9411 logloss=0.0640 top1=0.8787 fit=57.2s
+  fold 3: macroF1=0.9573 logloss=0.0603 top1=0.9312 fit=61.0s
+  fold 4: macroF1=0.9413 logloss=0.0697 top1=0.9070 fit=55.5s
+{'model': 'rf', 'family': 'Ensemble (bagging)', 'config': 'RandomForest 200 trees, max_depth=20, min_samples_leaf=5', 'train_rows_used': 601137, 'cv_macro_f1_mean': np.float64(0.941), 'cv_macro_f1_std': np.float64(0.0094), 'cv_log_loss_mean': np.float64(0.0682), 'cv_top1_mean': np.float64(0.8982), 'cv_top1_std': np.float64(0.0217), 'train_macro_f1': 0.9626, 'train_log_loss': 0.0488, 'test_macro_f1': 0.9373, 'test_precision_pos': 0.9059, 'test_recall_pos': 0.8754, 'test_f1_pos': 0.8904, 'test_accuracy': 0.9725, 'test_log_loss': 0.0678, 'test_top1_acc': 0.8944, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.9426, 'test_route_f1': 0.9459, 'fit_time_s_full': 57.9596, 'inference_ms_per_1000_fixes': 24.9384}
+
+=== lgbm ===
+C:\Users\Productivity\AppData\Local\Programs\Python\Python312\Lib\site-packages\lightgbm\sklearn.py:1106: LGBMDeprecationWarning: The argument 'eval_set' is deprecated, use 'eval_X' and 'eval_y' instead.
+  eval_set = _validate_eval_set_Xy(eval_set=eval_set, eval_X=eval_X, eval_y=eval_y)
+  fold 0: macroF1=0.9262 logloss=0.0862 top1=0.8691 fit=7.5s
+  fold 1: macroF1=0.9386 logloss=0.0702 top1=0.9061 fit=5.9s
+  fold 2: macroF1=0.9372 logloss=0.0644 top1=0.8784 fit=5.1s
+  fold 3: macroF1=0.9588 logloss=0.0601 top1=0.9350 fit=4.9s
+  fold 4: macroF1=0.9441 logloss=0.0715 top1=0.9089 fit=4.6s
+{'model': 'lgbm', 'family': 'Boosting', 'config': 'LightGBM 400 trees, lr=0.05, num_leaves=63 (defaults otherwise)', 'train_rows_used': 601137, 'cv_macro_f1_mean': np.float64(0.941), 'cv_macro_f1_std': np.float64(0.0106), 'cv_log_loss_mean': np.float64(0.0705), 'cv_top1_mean': np.float64(0.8995), 'cv_top1_std': np.float64(0.0235), 'train_macro_f1': 0.9668, 'train_log_loss': 0.0412, 'test_macro_f1': 0.9378, 'test_precision_pos': 0.9036, 'test_recall_pos': 0.8794, 'test_f1_pos': 0.8913, 'test_accuracy': 0.9727, 'test_log_loss': 0.0673, 'test_top1_acc': 0.8981, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.9473, 'test_route_f1': 0.9507, 'fit_time_s_full': 6.5397, 'inference_ms_per_1000_fixes': 22.6169}
+
+=== mlp ===
+  fold 0: macroF1=0.9241 logloss=0.0942 top1=0.8658 fit=77.9s
+  fold 1: macroF1=0.9313 logloss=0.0805 top1=0.9009 fit=79.2s
+  fold 2: macroF1=0.9288 logloss=0.0755 top1=0.8605 fit=78.3s
+  fold 3: macroF1=0.9514 logloss=0.0844 top1=0.9292 fit=84.3s
+  fold 4: macroF1=0.9336 logloss=0.0817 top1=0.8930 fit=80.4s
+{'model': 'mlp', 'family': 'Neural network', 'config': 'StandardScaler + MLP (64,32) ReLU, Adam lr=1e-3, alpha=1e-4, 25 epochs', 'train_rows_used': 601137, 'cv_macro_f1_mean': np.float64(0.9339), 'cv_macro_f1_std': np.float64(0.0093), 'cv_log_loss_mean': np.float64(0.0833), 'cv_top1_mean': np.float64(0.8899), 'cv_top1_std': np.float64(0.025), 'train_macro_f1': 0.9504, 'train_log_loss': 0.0592, 'test_macro_f1': 0.9308, 'test_precision_pos': 0.9103, 'test_recall_pos': 0.8491, 'test_f1_pos': 0.8787, 'test_accuracy': 0.9701, 'test_log_loss': 0.0808, 'test_top1_acc': 0.8866, 'test_candidate_miss_rate': 0.0013, 'test_route_continuity': 0.9459, 'test_route_f1': 0.9459, 'fit_time_s_full': 89.9783, 'inference_ms_per_1000_fixes': 4.9947}
+    model  cv_macro_f1_mean  cv_top1_mean  test_macro_f1  test_top1_acc  test_log_loss  test_route_continuity  inference_ms_per_1000_fixes
+0  logreg            0.9117        0.8831         0.9125         0.8792         0.1001                 0.9240                       1.0944
+1     gnb            0.8450        0.8555         0.8402         0.8487         0.6036                 0.9206                       3.3242
+2     knn            0.9218        0.8745         0.9241         0.8848         0.1041                 0.9279                    1201.5547
+3  linsvm            0.9116        0.8834         0.9118         0.8793         0.1007                 0.9235                       2.5765
+4      rf            0.9410        0.8982         0.9373         0.8944         0.0678                 0.9426                      24.9384
+5    lgbm            0.9410        0.8995         0.9378         0.8981         0.0673                 0.9473                      22.6169
+6     mlp            0.9339        0.8899         0.9308         0.8866         0.0808                 0.9459                       4.9947

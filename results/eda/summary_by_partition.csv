@@ -1,0 +1,17 @@
+,student_test,train
+trips,10.0,80.0
+fixes_total,19160.0,208417.0
+fixes_median,1420.0,1529.0
+nan_total,0.0,0.0
+nonmonotonic_t,0.0,0.0
+dt_eq_1_mean,0.9819896936551981,0.9382961036581522
+dt_max,210.0,153064.0
+gaps_gt_10s,27.0,590.0
+jumps,1.0,147.0
+length_km_median,20.93561710211454,24.065719471034992
+arcs_median,13145.0,19526.5
+isolated_nodes,0.0,0.0
+weak_components_median,11.0,20.0
+largest_scc_frac_min,0.8169491525423729,0.6358574610244989
+route_cont_min,0.9973190348525469,0.9813084112149533
+trips_with_repeats,1.0,9.0

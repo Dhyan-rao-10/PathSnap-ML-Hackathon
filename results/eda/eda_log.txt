@@ -1,0 +1,18 @@
+partition               student_test          train
+trips                      10.000000      80.000000
+fixes_total             19160.000000  208417.000000
+fixes_median             1420.000000    1529.000000
+nan_total                   0.000000       0.000000
+nonmonotonic_t              0.000000       0.000000
+dt_eq_1_mean                0.981990       0.938296
+dt_max                    210.000000  153064.000000
+gaps_gt_10s                27.000000     590.000000
+jumps                       1.000000     147.000000
+length_km_median           20.935617      24.065719
+arcs_median             13145.000000   19526.500000
+isolated_nodes              0.000000       0.000000
+weak_components_median     11.000000      20.000000
+largest_scc_frac_min        0.816949       0.635857
+route_cont_min              0.997319       0.981308
+trips_with_repeats          1.000000       9.000000
+EDA written to C:\Users\Productivity\Documents\Sem-5\Mini Projects And Assignments\ML_Hackathon\Project\results\eda

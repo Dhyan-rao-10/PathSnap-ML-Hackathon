@@ -1,0 +1,14 @@
+# raw / derived data (reproducible from the provided dataset)
+data/raw/
+data/eval/
+data/processed/
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# node / ui build
+ui/node_modules/
+ui/dist/
+# logs
+*.log

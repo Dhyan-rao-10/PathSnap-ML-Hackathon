@@ -1,0 +1,16 @@
+# Pinned to the versions used for training: the exported model (joblib) must be
+# loaded with the same scikit-learn / LightGBM versions on the API laptop.
+numpy==2.5.4
+pandas==3.0.6
+scipy==1.18.1
+scikit-learn==1.9.1
+lightgbm==4.7.0
+optuna==5.1.0
+pyarrow==26.0.1
+joblib==1.6.0
+pyproj==3.8.0
+folium==1.0.0
+matplotlib==3.11.2
+fastapi==0.162.0
+uvicorn==0.54.0
+pydantic==2.14.2

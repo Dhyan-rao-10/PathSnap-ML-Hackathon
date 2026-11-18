@@ -1,0 +1,18 @@
+{
+  "best_params": {
+    "n_estimators": 450,
+    "learning_rate": 0.044110582978665505,
+    "num_leaves": 25,
+    "min_child_samples": 157,
+    "subsample": 0.7661911021778365,
+    "colsample_bytree": 0.5924886460817442,
+    "reg_lambda": 0.001683852628154045,
+    "reg_alpha": 0.0014516427144130194,
+    "subsample_freq": 1
+  },
+  "best_cv_top1_search": 0.9000747020543546,
+  "n_trials": 30,
+  "search_seconds": 283.56744289398193,
+  "search_fixes": 40000,
+  "objective": "3-fold GroupKFold mean top-1 accuracy"
+}
