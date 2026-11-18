@@ -12,3 +12,5 @@ ui/node_modules/
 ui/dist/
 # logs
 *.log
+# generated report HTML (the PDF is committed)
+report/PathSnap_Report.html

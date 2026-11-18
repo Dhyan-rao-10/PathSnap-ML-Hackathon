@@ -47,6 +47,17 @@ python scripts/eda.py                # EDA tables, plots, Folium maps   -> resul
 python scripts/train_models.py       # 7 models, GroupKFold CV + student test -> results/models/
 python scripts/tune_optuna.py        # Optuna TPE for LightGBM, exports artifacts/ -> results/optuna/
 python scripts/tune_eval_hmm.py      # HMM tuning (train OOF), classifier vs HMM, config.json -> results/hmm/
+python scripts/hmm_error_analysis.py # error categories + accuracy by speed (student test) -> results/hmm_analysis/
+python scripts/feature_importance.py # tuned LightGBM feature importance -> results/models/
+```
+
+## Building the report
+
+The technical report is `report/PathSnap_Report.pdf`, built from `report/sections/*.md`:
+
+```bash
+python scripts/export_map_figures.py # Folium HTML maps -> PNG screenshots in report/figures/ (needs Microsoft Edge)
+python scripts/build_report.py       # report/sections/*.md -> report/PathSnap_Report.pdf (needs Microsoft Edge)
 ```
 
 Random seed: 42 everywhere (`src/pathsnap/config.py`).
